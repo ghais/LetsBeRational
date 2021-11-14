@@ -102,6 +102,8 @@ EXPORT_EXTERN_C double set_implied_volatility_maximum_iterations(double t){
       InterlockedExchange(&(implied_volatility_maximum_iterations.data),i);
 #elif defined( __x86__ ) || defined( __x86_64__ )
       implied_volatility_maximum_iterations.data = i;
+#elif defined ( __aarch64__ ) || defined (__aarch32__)
+       implied_volatility_householder_method_order.data = i;
 #else
 # error Atomic operations not implemented for this platform.
 #endif
@@ -116,6 +118,8 @@ EXPORT_EXTERN_C double set_implied_volatility_output_type(double t){
    InterlockedExchange(&(implied_volatility_output_type.data),i);
 #elif defined( __x86__ ) || defined( __x86_64__ )
    implied_volatility_output_type.data = i;
+#elif defined ( __aarch64__ ) || defined (__arm__)
+    implied_volatility_output_type.data = i;
 #else
 # error Atomic operations not implemented for this platform.
 #endif
@@ -131,6 +135,8 @@ EXPORT_EXTERN_C double set_implied_volatility_householder_method_order(double t)
       InterlockedExchange(&(implied_volatility_householder_method_order.data),i);
 #elif defined( __x86__ ) || defined( __x86_64__ )
       implied_volatility_householder_method_order.data = i;
+#elif defined ( __aarch64__ ) || defined (__aarch32__)
+       implied_volatility_householder_method_order.data = i;
 #else
 # error Atomic operations not implemented for this platform.
 #endif

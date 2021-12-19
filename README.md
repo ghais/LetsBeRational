@@ -7,4 +7,4 @@
 [![Stackage Nightly](http://stackage.org/package/LetsBeRational/badge/nightly)](http://stackage.org/nightly/package/LetsBeRational)
 [![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-Haskell binding for Jaekel's "Let's be Rational" implied volatility calcualtion
+Haskell binding for Jaekel's "Let's be Rational" implied volatility calculation

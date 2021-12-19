@@ -2,7 +2,7 @@ cabal-version:       2.2
 name:                LetsBeRational
 version:             1.0.0.0
 synopsis:            European option implied vol calculation
-description:         Haskell binding for Jaekel's "Let's be Rational" implied volatility calcualtion
+description:         Haskell binding for Jaekel's "Let's be Rational" implied volatility calculation
 homepage:            https://github.com/ghais/LetsBeRational
 bug-reports:         https://github.com/ghais/LetsBeRational/issues
 license:             MIT

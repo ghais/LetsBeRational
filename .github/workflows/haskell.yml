@@ -19,7 +19,7 @@ jobs:
         cabal-version: '3.2'
 
     - name: Cache
-      uses: actions/cache@v2.1.7
+      uses: actions/cache@v3.2.3
       env:
         cache-name: cache-cabal
       with:
